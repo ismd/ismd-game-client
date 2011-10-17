@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Game</class>
+ <widget class="QWidget" name="Game">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Игра</string>
+  </property>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>20</y>
+     <width>28</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Имя:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelAvatar">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>10</y>
+     <width>125</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Здесь аватарка</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelName">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>20</y>
+     <width>55</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>350</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>60</y>
+      <width>216</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Здесь изображение текущей клетки</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>40</y>
+     <width>56</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Уровень:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelLevel">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>40</y>
+     <width>55</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="gvMap">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>350</width>
+     <height>300</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bLeft">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>490</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>left</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bUp">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>470</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>up</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bDown">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>500</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>down</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bRight">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>490</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>right</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="eChat">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>260</y>
+     <width>301</width>
+     <height>221</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelMoney">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>60</y>
+     <width>55</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>60</y>
+     <width>46</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Деньги:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bQuests">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>520</y>
+     <width>121</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Квесты</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="lCellContent">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>130</y>
+     <width>281</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="viewMode">
+    <enum>QListView::IconMode</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bTalk">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>220</y>
+     <width>95</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Общаться</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bCharacter">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>490</y>
+     <width>121</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Персонаж</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>538</y>
+     <width>350</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Настройки</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="bKill">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>220</y>
+     <width>95</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Убить</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bTrade">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>220</y>
+     <width>95</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Торговать</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
